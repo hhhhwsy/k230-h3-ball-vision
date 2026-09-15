@@ -1,5 +1,5 @@
 """
-H题融合测试版：K230钢球识别 + UART + H.264 RTSP图传
+K230 单 Sensor 双通道融合版：钢球识别 + UART + H.264 RTSP 图传
 
 运行环境：
     庐山派 K230-CanMV，CanMV v1.8+ MicroPython
@@ -99,7 +99,7 @@ V_FLIP = False
 MANUAL_EXPOSURE_US = 0
 
 # 用户当前K230带800x480屏幕，因此默认使用ST7701。
-# 首次融合测试保留实体屏；正式比赛追求帧率时可关闭。
+# 首次融合测试保留实体屏；追求帧率时可关闭。
 ENABLE_LOCAL_DISPLAY = True
 DISPLAY_TO_IDE = False
 DISPLAY_DEVICE = Display.ST7701
@@ -249,7 +249,7 @@ UART_SEND_INTERVAL_MS = 40
 # =============================================================================
 
 # True：在实体屏图像上显示候选框、ROI、状态和坐标。
-# 正式比赛若需要更高帧率，可改为False。
+# 若需要更高帧率，可改为 False。
 DRAW_DEBUG_OVERLAY = True
 
 # 必要时才打开原始候选框调试。默认False可以避免画面布满小框；
