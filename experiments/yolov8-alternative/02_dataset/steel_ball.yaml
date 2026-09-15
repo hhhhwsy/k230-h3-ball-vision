@@ -1,0 +1,8 @@
+path: D:/k230/codex/steel_ball_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: steel_ball
+

@@ -1,0 +1,41 @@
+# === 密钥与本地配置（务必不要提交）===
+*.secret
+.env
+config_local.py
+
+# === 固件与大文件 ===
+*.img
+*.img.gz
+*.bin
+*.hex
+
+# === 模型权重（备选方案产物，需自行训练生成）===
+*.pt
+*.onnx
+*.kmodel
+runs/
+train_output/
+
+# === 数据集：只保留 samples 与 annotations ===
+dataset/images/
+dataset/labels/
+dataset/raw_images/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# === 编辑器 ===
+.vscode/
+.idea/
+*.swp
+
+# === 系统 ===
+.DS_Store
+Thumbs.db
+
+# === 运行日志 ===
+*.log
+log/
